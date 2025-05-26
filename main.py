@@ -7,7 +7,7 @@ from core.application import MarkdownEditorApp
 
 def main():
     app = QApplication(sys.argv)
-    editor_app = MarkdownEditorApp()
+    editor_app = MarkdownEditorApp(app)
     editor_app.show()
     sys.exit(app.exec())
 

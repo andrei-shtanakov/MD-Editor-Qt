@@ -6,7 +6,8 @@ from core.main_window import MainWindow
 from core.state_manager import StateManager
 
 class MarkdownEditorApp:
-    def __init__(self):
+    def __init__(self, app):
+        self.app = app
         self.state_manager = StateManager()
         self.main_window = MainWindow(self.state_manager)
     
